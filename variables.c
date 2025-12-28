@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h> //Includes standard booleans
 
 int main(){
 
@@ -22,10 +23,21 @@ int main(){
 
     printf("The value of pi is %.15lf\n", pi);
 
-    //Variables can also display charecters.
+    //Variables can also display charecters. Char can only have one charecter in them.
     char grade = 'A';
-    //The c stands for char in the print function
+    char currency = 'S';
+    //The c stands for char in the print function.
     printf("Your grade is %c\n", grade);
+    printf("Your currency is %c\n", currency);
+
+    //To create a string in c you create a array of char.
+    char name[] = "Gustav"; //This is a string
+
+    printf("Hello %s\n", name);
+
+    //This is a boolean
+    bool isOnline = true;
+    printf("%d", isOnline);//This returns one, one stand for true and zero for false
 
     return 0;
 } 
